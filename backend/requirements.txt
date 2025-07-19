@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+websockets
+httpx
+pydantic
+python-dotenv
+loguru
+openai-whisper
+livekit
+selenium
+playwright
+beautifulsoup4
+lxml
+pytest 
+python-multipart
+langchain
+langchain_openai

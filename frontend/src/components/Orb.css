@@ -1,0 +1,41 @@
+.orb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.orb svg circle {
+  fill: #007aff;
+  opacity: 0.8;
+  transition: filter 0.2s;
+}
+.orb--waiting svg circle {
+  animation: orb-pulse 1.2s infinite;
+  filter: drop-shadow(0 0 8px #007aff88);
+}
+@keyframes orb-pulse {
+  0% {
+    r: 24;
+    opacity: 0.8;
+  }
+  50% {
+    r: 28;
+    opacity: 0.5;
+  }
+  100% {
+    r: 24;
+    opacity: 0.8;
+  }
+}
+.orb--talking svg circle {
+  animation: orb-wave 0.5s infinite alternate;
+  filter: drop-shadow(0 0 16px #007affcc);
+}
+@keyframes orb-wave {
+  0% {
+    r: 24;
+  }
+  100% {
+    r: 30;
+  }
+}
